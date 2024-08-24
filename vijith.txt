@@ -1,0 +1,288 @@
+1.explain
+
+public static void main(String args[])
+-public are access specifier,static are non access specifier, void are return type,mai are method name,inside parenthesis are called parameter
+
+void 
+- void is a return type used to call the 
+
+static 
+-static is a non access specifier and itis a user defie function
+
+final
+-it i a key word when final keywoed call in program values are constant it replace the const keyword
+
+public
+-public is access speciefier and it will acess by anyone
+
+2.explain data type briefly.
+-data type shows which type of data can store 
+their are 2 types in data type
+*primitive data type
+*non primitive data type
+
+in primitive their are 8 keywords that are
+   datatype      defultvalue
+
+-  string         null
+-  int            0
+-  Boolean        false
+-  char           /u0000
+-  float          o.o
+-  double         00
+-  long           0l
+-  short          
+
+*size are fixed
+*user define function
+*declare outside mainmethod inside the class
+
+in nonprimitive datatype
+*size is not fixed
+*nonuser define function
+
+
+3.explain variable and its type
+  variable is a container used to store the values with the help of datatypes
+     -local-it should not declare outside class are method
+     -static-it should declare in a class and outsidemethod
+     -instance
+     -parameter
+
+4.explain method and its types and ways of declaration
+methods are declare inside the class and it used to invoke in tester class
+-with datatype without parameter
+-without datatype with parameter
+-with datatype with  parameter
+-without datatype without parameter
+
+type of method
+-static method 
+-instance method
+
+
+5.explain instance creation with programming
+- instance are have default constructon when it will create at runtime
+
+prog;-
+main class-
+
+public class Chair
+{
+
+}
+
+tester class-
+ public class ChairTester
+{
+public static void main(String args[])
+{
+System.out.println(new Chair());
+}
+}
+
+6.write a programming get the sum of all the array elements
+
+main class;-
+
+public class Sum
+{
+public static String sumNumbers(int numbers[])
+{
+         int allNumbers=0;
+	for(int index=0; index<=numbers.length-1; index++)
+		{
+			if(numbers[index]>0)
+			{
+			System.out.println(numbers[index]);
+			allNumbers++;
+			}
+			else
+			{
+			}
+			
+		}
+		return "allNumbers:"+allNumbers;	 
+}
+}
+
+tester class;-
+
+public class SumTester
+{
+public static void main(String args[])
+{
+	int results[] ={1,2,3,4,4};
+	String result=Sum.sumNumbers(results);
+	System.out.println(result);
+}
+}
+
+
+7.write a program to reverse string array
+
+public class Revers{
+
+}
+
+
+
+
+10.what is the output for program
+
+a) class name not accept annotation process
+b) class name not accept annotation process
+b  missing array
+
+11 what is identifier  and defin identifier rules
+ -identifier is use to gave specific name and it called identity
+  -unique name
+  -
+
+12.what is constructor
+ constructor is a 
+
+13.list 30 keyword
+
+int 
+float
+char
+double
+long
+array
+short
+print
+Boolean
+if
+else
+return
+new
+final
+through
+exception
+this
+for
+Enum
+const
+count
+while
+
+14 exaplin program execution flow
+
+javac is used to compile- source code converted into byte code byte code will not understandable by machine and user also it will use jvm interuptor to convert machine understable code and it gave output
+
+
+15 explain the java components
+
+java is a high level programming langwage used to build application in different platform
+
+it contins
+jdk-jva development kit
+jre-java runtime environment
+jvm-java virtual machine
+
+jdk contain set of library
+ set of document
+ and it is a platform independent
+ and jre
+
+jre contains set of library
+set of document
+and jvm
+and it is platform dependent
+
+jvm it will not present from physical but it can workthroug it
+jvm have interuptor and it helps to convert byte codes into machine understandable langwage
+it i a platform independent
+
+list the concept of oop
+
+object oriented programming langwage
+--highlevel programming langwagw
+--security is good
+--it is a platform independent
+--
+
+
+17 explain method overloading wiyhexample
+ method overloading is a function used to overload the old method are take reference from old method name
+
+main class;-public class Cook
+{
+	public static String cookName[] = {"cook1","cook2","cook3","cook4"};
+	public static int getCookName()
+	{
+		int length = cookName.length;
+		return length;	
+	}	
+	public static void displayCookName()
+	{
+		for(int index=0; index<=cookName.length-1; index++)
+		{
+			System.out.println("jio tv name is:"+cookName[index]);
+		}
+		
+	}
+		public static int cookNumber[] = {1,2,3,4};
+	public static int getCookNumbers()
+	{
+		int length = cookNumber.length;
+		return length;	
+	}	
+	public static void displayCookNumber()
+	{
+		for(int index=0; index<=cookNumber.length-1; index++)
+		{
+			System.out.println("show name is:"+cookNumber[index]);
+		}
+		
+	}
+		public static float cookRating[] = {1.1f,2.2f,3.3f};
+	public static int getCookRating()
+	{
+		int length = cookRating.length;
+		return length;	
+	}	
+	public static void displayCookRating()
+	{
+		for(int index=0; index<=cookRating.length-1; index++)
+		{
+			System.out.println("show name  and rating is:"+cookRating[index]);
+		}
+		
+	}
+	
+}
+
+
+tester class;- 
+public class CookTester
+{
+	public static void main(String args[])
+	{
+		System.out.println("array length:");
+         int result =Cook.getCookName();
+        System.out.println("array length:"+result);		
+        System.out.print("display channel name");
+        Cook.displayCookName();	
+
+		
+		System.out.println("array length:");
+         int result1 =Cook.getCookNumbers();
+        System.out.println("array length:"+result1);		
+        System.out.print("display channel name");
+        Cook.displayCookNumber();
+		
+		System.out.println("array length:");
+         int result2 =Cook.getCookRating();
+        System.out.println("array length:"+result2);		
+        System.out.print("display channel name");
+        Cook.displayCookRating();
+		
+	}
+	
+	
+	
+	
+	
+}
